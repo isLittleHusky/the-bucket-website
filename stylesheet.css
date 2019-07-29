@@ -1,12 +1,13 @@
 nav {
 	display: flex;
 	justify-content: flex-end;
-	/*align-content: center;*/
+	align-content: center;
 	background-color: black;
 }
 
 /*css for animating hamburger menu button*/
 .menu-button {
+	display: inline-block;
 	cursor: pointer;
 }
 

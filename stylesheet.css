@@ -11,11 +11,27 @@ nav {
 	height: 150px;
 }
 
+.image-container {
+	height: 100%;
+	width: 55%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-basis: 100%;
+}
+
 nav img {
 	height: 100%;
 	width: 112px;
-	margin: auto;
-	margin-right: 280px;
+}
+
+
+.button-container {
+	height: 100%;
+	width: 45%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 /*css for animating hamburger menu button*/

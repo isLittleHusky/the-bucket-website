@@ -6,7 +6,7 @@ nav {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	align-items: flex-end;
+	align-content: flex-end;
 	background-color: black;
 	height: 150px;
 }
@@ -14,8 +14,8 @@ nav {
 nav img {
 	height: 100%;
 	width: 112px;
-	align-self: flex-end;
 	margin: auto;
+	margin-right: 280px;
 }
 
 /*css for animating hamburger menu button*/
@@ -27,6 +27,7 @@ nav img {
 	align-content: center;
 	cursor: pointer;
 	margin: auto;
+	margin-right: 20px;
 }
 
 .bar1, .bar2, .bar3 {

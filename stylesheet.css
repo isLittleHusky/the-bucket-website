@@ -73,10 +73,23 @@ div.menu {
 	width: 400px;
 	position: absolute;
 	right: 0;
+	opacity: 0;
+	transition: opacity 250ms ease-in-out, visibility 250ms;
+	-moz-transition: opacity 250ms ease-in-out, visibility 250ms;
+	-webkit-transition: opacity 250ms ease-in-out, visibility 250ms;
+	visibility: hidden
+}
+
+div.change.menu {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 250ms ease-in-out;
+	-moz-transition: opacity 250ms ease-in-out;
+	-webkit-transition: opacity 250ms ease-in-out;
 }
 
 .menu ul {
-	display: none;
+	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-content: center;
@@ -86,10 +99,6 @@ div.menu {
 	padding: 0;
 	list-style-type: none;
 	z-index: 1;
-}
-
-.change ul {
-	display: flex;
 }
 
 .menu li {

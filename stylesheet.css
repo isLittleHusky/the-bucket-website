@@ -44,26 +44,68 @@ nav img {
 	cursor: pointer;
 	margin: auto;
 	margin-right: 20px;
+	background-color: black;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 105px;
-  height: 15px;
-  background-color: white;
-  margin: auto;
-  transition: 0.4s;
+  	width: 105px;
+  	height: 15px;
+  	background-color: white;
+ 	margin: auto;
+  	transition: 0.4s;
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-25px, 14px) ;
-  transform: rotate(-45deg) translate(-25px, 14px) ;
+  	-webkit-transform: rotate(-45deg) translate(-25px, 14px) ;
+  	transform: rotate(-45deg) translate(-25px, 14px) ;
 }
 
 .change .bar2 {
-  opacity: 0;
+  	opacity: 0;
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-28px, -26px) ;
-  transform: rotate(45deg) translate(-28px, -26px) ;
+  	-webkit-transform: rotate(45deg) translate(-28px, -26px) ;
+  	transform: rotate(45deg) translate(-28px, -26px) ;
+}
+
+div.menu {
+	width: 400px;
+	position: absolute;
+	right: 0;
+}
+
+.menu ul {
+	display: none;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	z-index: 1;
+}
+
+.change ul {
+	display: flex;
+}
+
+.menu li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+	height: 80px;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 36px;
+	color: white;
+	margin: auto;
+	width: 100%;
+	text-align: center;
 }

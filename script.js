@@ -1,3 +1,6 @@
-function hamburgerClick(a) {
-	a.classList.toggle('change');
+function hamburgerClick() {
+	const menuButton = document.querySelector('.menu-button');
+	const menu = document.querySelector('.menu');
+	menuButton.classList.toggle('change');
+	menu.classList.toggle('change');
 }

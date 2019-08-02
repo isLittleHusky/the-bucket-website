@@ -2,7 +2,7 @@ body {
 	margin: 0;
 }
 
-nav {
+header {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -20,7 +20,7 @@ nav {
 	flex-basis: 100%;
 }
 
-nav img {
+header img {
 	height: 100%;
 	width: 112px;
 }

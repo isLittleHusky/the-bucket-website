@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask
 
 
 def create_app(test_config=None):
@@ -27,8 +27,10 @@ def create_app(test_config=None):
 	from . import db
 	db.init_app(app)
 
-	@app.route('/base')
-	def base():
-		return render_template('base.html')
+	from . import main
+	app.register_blueprint(main.bp)
+
+	from . import store
+	app.register_blueprint(store.bp)
 
 	return app

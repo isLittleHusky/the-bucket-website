@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+	<div class='background'>
+		<img src='{{ url_for("static", filename="img/background.jpg") }}' alt='Bucket hats and beanies' class='bg-img'>
+		<a href='{{ url_for("store.products") }}' class='bg-button'>View Products</a>
+	</div>
+{% endblock %}

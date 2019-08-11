@@ -20,8 +20,8 @@
 	</header>
 	<div class='menu'>
 		<ul>
-			<li><a href='google.com'>Headwear</a></li>
-			<li><a href='contact.html'>Contact Us</a></li>
+			<li><a href='{{ url_for("main.home") }}'>Home</a></li>
+			<li><a href='{{ url_for("main.contact") }}'>Contact Us</a></li>
 		</ul>
 	</div>
 	{% block content %}{% endblock %}

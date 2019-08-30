@@ -5,25 +5,5 @@
 	<link rel='stylesheet' href='{{ url_for("static", filename="css/stylesheet.css") }}'>
 	<script src='{{ url_for("static", filename="js/script.js") }}'></script>
 </head>
-<body>
-	<header>
-		<div class='image-container'>
-			<img src='{{ url_for("static", filename="img/logo.png") }}' alt='The Bucket Logo'>
-		</div>
-		<div class='button-container'>
-			<div class='menu-button' onclick='hamburgerClick()'>
-				<div class='bar1'></div>
-				<div class='bar2'></div>
-				<div class='bar3'></div>
-			</div>
-		</div>
-	</header>
-	<div class='menu'>
-		<ul>
-			<li><a href='{{ url_for("main.home") }}'>Home</a></li>
-			<li><a href='{{ url_for("main.contact") }}'>Contact Us</a></li>
-		</ul>
-	</div>
-	{% block content %}{% endblock %}
-</body>
+{% block body %}{% endblock %}
 </html>
